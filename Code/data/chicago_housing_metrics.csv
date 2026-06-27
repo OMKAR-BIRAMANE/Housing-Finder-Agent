@@ -1,0 +1,51 @@
+City,Neighborhood,Zip_Code,Avg_Monthly_Rent_USD,Median_Household_Income_USD,Crime_Rate_Per_10k,Affordable_Housing_Units_Available
+Chicago,Rogers Park,60626,1250,45000,312,145
+Chicago,Edgewater,60660,1400,52000,280,89
+Chicago,Uptown,60640,1350,50000,340,112
+Chicago,Lake View,60657,1850,85000,210,45
+Chicago,Lincoln Park,60614,2200,105000,190,15
+Chicago,Near North Side,60610,2500,110000,250,10
+Chicago,Loop,60601,2400,108000,275,8
+Chicago,Near South Side,60616,1750,75000,260,55
+Chicago,Armour Square,60616,1100,38000,310,120
+Chicago,Douglas,60653,1150,41000,380,135
+Chicago,Oakland,60653,1050,35000,410,90
+Chicago,Fuller Park,60609,850,28000,580,40
+Chicago,Grand Boulevard,60653,1200,42000,390,110
+Chicago,Kenwood,60615,1450,55000,310,65
+Chicago,Washington Park,60637,950,31000,540,85
+Chicago,Hyde Park,60615,1600,68000,240,70
+Chicago,Woodlawn,60637,1050,34000,490,105
+Chicago,South Shore,60649,980,32000,510,150
+Chicago,Chatham,60619,1050,39000,420,115
+Chicago,Avalon Park,60617,1150,48000,350,80
+Chicago,South Chicago,60617,900,30000,480,130
+Chicago,Burnside,60619,950,33000,450,50
+Chicago,Calumet Heights,60617,1200,51000,320,75
+Chicago,Roseland,60628,920,31000,550,140
+Chicago,Pullman,60628,1050,40000,380,85
+Chicago,South Deering,60617,950,34000,460,95
+Chicago,East Side,60617,1000,41000,390,110
+Chicago,West Pullman,60628,900,32000,530,125
+Chicago,Riverdale,60827,800,25000,610,60
+Chicago,Hegewisch,60633,1050,45000,300,70
+Chicago,Garfield Ridge,60638,1250,60000,230,88
+Chicago,Archer Heights,60632,1150,48000,310,92
+Chicago,Brighton Park,60632,1100,44000,340,105
+Chicago,McKinley Park,60609,1150,46000,320,95
+Chicago,Bridgeport,60608,1300,52000,280,110
+Chicago,New City,60609,950,31000,520,130
+Chicago,West Englewood,60636,850,27000,590,80
+Chicago,Englewood,60621,820,26000,600,75
+Chicago,Ashburn,60652,1350,65000,250,85
+Chicago,Auburn Gresham,60620,980,35000,500,120
+Chicago,Beverly,60643,1700,85000,180,40
+Chicago,Washington Heights,60643,1150,50000,370,90
+Chicago,Mount Greenwood,60655,1500,80000,150,55
+Chicago,Morgan Park,60643,1300,62000,290,75
+Chicago,Norwood Park,60631,1450,72000,170,65
+Chicago,Albany Park,60625,1250,55000,290,115
+Chicago,Logan Square,60647,1650,68000,280,85
+Chicago,Humboldt Park,60651,1150,40000,450,140
+Chicago,West Town,60622,1900,88000,240,60
+Chicago,Austin,60644,980,33000,560,160
