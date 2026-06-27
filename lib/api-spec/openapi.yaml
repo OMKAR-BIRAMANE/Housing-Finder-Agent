@@ -1,0 +1,124 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: Chicago Affordable Housing Finder API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: agent
+    description: AI agent operations
+  - name: neighborhoods
+    description: Neighborhood data
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /agent/query:
+    post:
+      operationId: agentQuery
+      tags: [agent]
+      summary: Ask the AI housing agent a question
+      description: Send a natural language question to the LangChain agent and get a housing recommendation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AgentQueryInput"
+      responses:
+        "200":
+          description: Agent response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HousingAnswer"
+
+  /agent/neighborhoods:
+    get:
+      operationId: listNeighborhoods
+      tags: [neighborhoods]
+      summary: List all Chicago neighborhoods
+      description: Returns all 50 Chicago neighborhoods with rent, crime, income, and housing unit data
+      responses:
+        "200":
+          description: List of neighborhoods
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Neighborhood"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    AgentQueryInput:
+      type: object
+      properties:
+        question:
+          type: string
+          description: Natural language housing question from the user
+          minLength: 1
+      required:
+        - question
+
+    HousingAnswer:
+      type: object
+      properties:
+        answer:
+          type: string
+          description: The agent's recommendation and analysis
+        success:
+          type: boolean
+          description: Whether the agent completed successfully
+      required:
+        - answer
+        - success
+
+    Neighborhood:
+      type: object
+      properties:
+        City:
+          type: string
+        Neighborhood:
+          type: string
+        Zip_Code:
+          type: integer
+        Avg_Monthly_Rent_USD:
+          type: number
+        Median_Household_Income_USD:
+          type: number
+        Crime_Rate_Per_10k:
+          type: number
+        Affordable_Housing_Units_Available:
+          type: number
+      required:
+        - City
+        - Neighborhood
+        - Zip_Code
+        - Avg_Monthly_Rent_USD
+        - Median_Household_Income_USD
+        - Crime_Rate_Per_10k
+        - Affordable_Housing_Units_Available
