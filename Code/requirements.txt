@@ -1,0 +1,10 @@
+langchain-google-genai
+langchain-classic
+langchain-community
+langchain-core
+pandas
+openpyxl
+requests
+python-dotenv
+tabulate
+colorama
